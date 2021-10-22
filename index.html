@@ -1,31 +1,41 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Media Gallery</title>
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/403cbe08da.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <input type="checkbox" id="checkbox">
-      <label class="btn" for="checkbox"><i class="fa fa-bars"></i> <span>Menu</span></label>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Media Gallery</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fas fa-cloud-upload-alt"></i> Upload</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fas fa-info"></i> Information</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link"><i class="fas fa-caret-down"></i> More</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+</body>
 
-      <h1 class="header">Media Gallery</h1>
-
-      <div class="sidebar">
-        <ul>
-          <a href="#" class="active"><li><i class="fa fa-home "></i>Home</li></a>
-          <a href="#"><li><i class="fa fa-upload"></i>Upload</li></a>
-          <a href="#"><li><i class="fa fa-info"></i>Information</li></a>
-          <a href="#"><li><i class="fa fa-file"></i>Credits</li></a>
-          <a href="#"><li><i class="fa fa-caret-down"></i>More</li></a>
-          <a href="#"><li>About</li></a>
-        </ul>
-      </div>
-  </body>
+<script src="js/navmenu.js"></script>
 </html>

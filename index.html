@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script crossorigin="anonymous" src="https://kit.fontawesome.com/403cbe08da.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <title>Media Gallery</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script crossorigin="anonymous" src="https://kit.fontawesome.com/403cbe08da.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <title>Media Gallery</title>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fas fa-cloud-upload-alt"></i> Upload</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fas fa-info"></i> Information</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link"><i class="fas fa-caret-down"></i> More</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </nav>
-    </header>
-</body>
+  <header class="header">
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fas fa-cloud-upload-alt"></i> Upload</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fas fa-info"></i> Information</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link"><i class="fas fa-caret-down"></i> More</a>
+        </li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
 
-<script src="js/navmenu.js"></script>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img\claudio-schwarz-img1.jpg" style="width:100%">
+      <div class="text">Image 1</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img\claudio-schwarz-img2.jpg" style="width:100%">
+      <div class="text">Image 2</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img\espolon-tequila-img.jpg" style="width:100%">
+      <div class="text">Image 3</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</body>
+<script src="js/main.js"></script>
 </html>

@@ -6,13 +6,13 @@ hamburger.addEventListener("click", mobileMenu);
 navLink.forEach(n => n.addEventListener("click", closeMenu));
 
 function mobileMenu() {
-    hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    hamburger.classList.toggle("current");
+    navMenu.classList.toggle("current");
 }
 
 function closeMenu() {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    hamburger.classList.remove("current");
+    navMenu.classList.remove("current");
 }
 
 var slideIndex = 1;
@@ -41,3 +41,14 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+$(".button").on("click", function() { // when item with class of button is clicked, fire function
+  var modal = $(this).data("modal"); // sets modal var equal to data attribute
+  $(modal).show(); // opens up modal (much code hidden here by jQuery)
+});
+$(".modal").on("click", function(e) { // sets up click function
+  var className = e.target.className; // var className set to event target
+  if(className === "modal" || className === "close"){ // if conditions are met...
+    $(this).closest(".modal").hide(); // then hide the modal
+  } // closes if-statement
+}); // closes function

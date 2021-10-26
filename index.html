@@ -37,23 +37,28 @@
   </header>
 
   <div class="slideshow-container">
-
     <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="img\claudio-schwarz-img1.jpg" style="width:100%">
-      <div class="text">Image 1</div>
+      <div class="numbertext"> <span class="currentnumber"> 1 </span> / 4</div>
+      <img src="img\claudio-schwarz-img1.jpg" alt="A center plaza in another country." style="width:100%">
+      <div class="text">A center plaza in another country.</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="img\claudio-schwarz-img2.jpg" style="width:100%">
-      <div class="text">Image 2</div>
+      <div class="numbertext"> <span class="currentnumber"> 2 </span> / 4</div>
+      <img src="img\claudio-schwarz-img2.jpg" alt="Sprial hole in wall." style="width:100%">
+      <div class="text">Sprial hole in wall.</div>
     </div>
 
     <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="img\espolon-tequila-img.jpg" style="width:100%">
-      <div class="text">Image 3</div>
+      <div class="numbertext"> <span class="currentnumber"> 3 </span> / 4</div>
+      <img src="img\espolon-tequila-img.jpg" alt="Pouring a drink after a long night." style="width:100%">
+      <div class="text">Pouring a drink after a long night.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"> <span class="currentnumber"> 4 </span> / 4</div>
+      <img src="img\kevin-grieve-img.jpg" alt="Traffic under a bridge." style="width:100%">
+      <div class="text">Traffic under a bridge.</div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -66,7 +71,258 @@
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
   </div>
+
+  <main class="modal-grid">
+    <div class="image-grid one">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Escalator</h4>
+        <p class="desc">A timelapse photo of people on an escalator. Good representation of time passing us all by if we focus on the future.</p>
+        <button data-modal="#01" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="01" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=396" alt="image" />
+          <div class="body-text">
+            <h3>Escalator</h3>
+            <p>A timelapse photo of people on an escalator. Good representation of time passing us all by if we focus on the future . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid two">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Mountain View</h4>
+        <p class="desc">A view of a snow-capped mountain from far away, looks great. Has someone climbed it before, wonder what the view is like from the top.</p>
+        <button data-modal="#02" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="02" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=235" alt="image" />
+          <div class="body-text">
+            <h3>Mountain View</h3>
+            <p>A view of a snow-capped mountain from far away, looks great. Has someone climbed it before, wonder what the view is like from the top . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid three">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Palm Trees</h4>
+        <p class="desc">A view of some palm trees somewhere tropical. The weather looks to be good, maybe time to go to the beach?</p>
+        <button data-modal="#03" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="03" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=645" alt="image" />
+          <div class="body-text">
+            <h3>Palm Trees</h3>
+            <p>A view of some palm trees somewhere tropical. The weather looks to be good, maybe time to go to the beach . . .  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid four">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">A Place to Think</h4>
+        <p class="desc">A void where one can talk to their inner self. Inside the human a place is created to help deal with life when it gets hard.</p>
+        <button data-modal="#04" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="04" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=302" alt="image" />
+          <div class="body-text">
+            <h3>A Place to Think</h3>
+            <p>A void where one can talk to their inner self. Inside the human mind a place is created to help deal with life when it gets hard . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid five">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Cityscape</h4>
+        <p class="desc">A cityscape to showcase how marvelous humanity's creations are. Everything is so densly packed together.</p>
+        <button data-modal="#05" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="05" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=864" alt="image" />
+          <div class="body-text">
+            <h3>Cityscape</h3>
+            <p>A cityscape to showcase how marvelous humanity's creations are. Everything is so densly packed together . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid six">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">House No. 2</h4>
+        <p class="desc">House from Greece, seems like the style of building from that area. They love to use wierd colors in their buildings.</p>
+        <button data-modal="#06" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="06" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=946" alt="image" />
+          <div class="body-text">
+            <h3>House No. 2</h3>
+            <p>House from Greece, seems like the style of building from that area. They love to use wierd colors in their buildings . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid seven">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Old Dock</h4>
+        <p class="desc">Abandoned dock that no one takes care of. Wonder if it was used a lot in the past. What sights has it seen?</p>
+        <button data-modal="#07" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="07" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=230" alt="image" />
+          <div class="body-text">
+            <h3>Old Dock</h3>
+            <p>Abandoned dock that no one takes care of. Wonder if it was used a lot in the past. What sights has it seen . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid eight">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Souls in the Sky</h4>
+        <p class="desc">Stars are hard to see now. Light pollution has ruined the sky, stars always seem hidden now due to it.</p>
+        <button data-modal="#08" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="08" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=120" alt="image" />
+          <div class="body-text">
+            <h3>Souls in the Sky</h3>
+            <p>Stars are hard to see now. Light pollution has ruined the sky, stars always seem hidden now due to it . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid nine">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Time Passing By</h4>
+        <p class="desc">Train is blurred due to the speed of the train not matching the shutter speed of the camera. Representing time passing.</p>
+        <button data-modal="#09" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="09" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=345" alt="image" />
+          <div class="body-text">
+            <h3>Time Passing By</h3>
+            <p>Train is blurred due to the speed of the train not matching the shutter speed of the camera. Representing time passing . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid ten">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Freedom in the Sky</h4>
+        <p class="desc">Bird soaring in the sky. Wonder what the view is from there, similar to what one sees while skydiving?</p>
+        <button data-modal="#10" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="10" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=130" alt="image" />
+          <div class="body-text">
+            <h3>Freedom in the Sky</h3>
+            <p>Bird soaring in the sky. Wonder what the view is from there, similar to what one sees while skydiving . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid eleven">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">Sandy Adventure</h4>
+        <p class="desc">Dune buddy in the dunes of a desert. Sand is going to be everywhere, good luck!</p>
+        <button data-modal="#11" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="11" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=196" alt="image" />
+          <div class="body-text">
+            <h3>Sandy Adventure</h3>
+            <p>Dune buddy in the dunes of a desert. Sand is going to be everywhere, good luck . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid twelve">
+      <div class="divider"></div><hr />
+      <div class="card">
+        <h4 class="title">View on top of the World</h4>
+        <p class="desc">View from the top of a skyscraper. Imagine having to go down and clean the windows of this huge building, not worth.</p>
+        <button data-modal="#12" class="view-more button">View</button>
+      </div>
+    </div>
+    <div id="12" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+          <img class="modal-img" src="https://picsum.photos/800/450/?image=420" alt="image" />
+          <div class="body-text">
+            <h3>View on top of the World</h3>
+            <p>View from the top of a skyscraper. Imagine having to go down and clean the windows of this huge building, not worth . . . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2021 Randeep Singh &nbsp;|&nbsp; All photos from <a href="https://unsplash.com/">unsplash</a> via <a href="https://picsum.photos/">Lorem Picsum</a>.</p>
+  </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </html>
